@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Superhero Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <nav>
+                <div id="Highscores">
+                    <a href="./highscores.html">View Highscores</a>
+                </div>
+                <div id="timer">
+                    Time: <span id="time">0</span>
+                </div>
+            </nav>
+
+        </header>
+
+        <section id="title-section" class="show">
+            <div class="row">
+                <div>
+                    <h1>Do You Know Superheroes?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p>Answer questions about DC Superheroes within the time limit. For every wrong answer, you will be penalized 10 seconds!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="startButton">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-section" class="hide">
+            <div class="row">
+                <div class="questions">
+                    <h3 id="question-title"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div id="choices"></div>
+                <div id="feedback" class="feedback hide"></div>
+            </div>
+        </section>
+
+        <section id="highscore-section" class="hide">
+            <div class="row">
+                <div id="high-score">
+                    <h2>End of Quiz!!!</h2>
+                    <h3>Your final score is <span id="final-score">0</span></h3>
+                    <label for="initials-area">Enter initials:</label>
+                    <input type="text" name="initials-area" maxlength="4" id="initials">
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="./assets/js/script1.js"></script>
+        <script type="text/javascript" src="./assets/js/script2.js"></script>
+
+</body>
+
+</html>
