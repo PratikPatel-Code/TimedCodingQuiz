@@ -108,7 +108,7 @@ function checkForEnter(event) {
     }
 }
 
-submitBtn.onclick = saveHighscore();
+submitBtn.onclick = saveHighscore;
 
 //start quiz
 startBtn.onclick = startQuiz;
