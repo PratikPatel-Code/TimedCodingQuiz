@@ -1,4 +1,4 @@
-// I put my question on another script sheet to organize my thoughts.
+// I put my question on this script sheet to organize my thoughts.
 var questions = [{
         title: "What is Batman's real name?",
         choices: ["Bruce Wayne", "John Wayne", "Clint Eastwood", "Michael Keaton"],
