@@ -108,7 +108,7 @@ function checkForEnter(event) {
     }
 }
 
-submitBtn.onclick = saveHighscore;
+submitBtn.onclick = saveHighscore();
 
 //start quiz
 startBtn.onclick = startQuiz;
@@ -120,6 +120,7 @@ function printHighscores() {
     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
     highscores.sort(function(a, b) {
         return b.score - a.score;
+        console.log(highscores)
     });
     highscores.forEach(function(score) {
         var liTag = document.createElement("li");
